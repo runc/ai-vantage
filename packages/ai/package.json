@@ -1,0 +1,21 @@
+{
+  "name": "@ai-vantage/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./mdx": "./src/mdx-source.ts"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-vantage/kg": "workspace:*",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^3.0.9"
+  }
+}

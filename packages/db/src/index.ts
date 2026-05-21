@@ -1,0 +1,14 @@
+export { getDb, createDb, closeDb, type Database } from './client.js';
+export { getDatabaseUrl, getDialect, getDefaultLibsqlUrl, type DbDialect } from './dialect.js';
+export * from './schema/index.js';
+export { EntityRepository } from './repositories/entity-repository.js';
+export { RelationRepository } from './repositories/relation-repository.js';
+export { AssertionRepository } from './repositories/assertion-repository.js';
+export { EvidenceRepository } from './repositories/evidence-repository.js';
+export { AuditLogRepository } from './repositories/audit-log-repository.js';
+export { GraphRepository } from './repositories/graph-repository.js';
+export { DocumentRepository } from './repositories/document-repository.js';
+export { ExtractionRepository, type DocumentExtraction } from './repositories/extraction-repository.js';
+export { AuditService, type Actor } from './services/audit-service.js';
+export { runDocumentIngest } from './ingest-runner.js';
+export { findAllPaths, getNHopNeighbors } from './graph-algorithms.js';

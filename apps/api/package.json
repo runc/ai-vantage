@@ -1,0 +1,26 @@
+{
+  "name": "@ai-vantage/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-vantage/ai": "workspace:*",
+    "@ai-vantage/contracts": "workspace:*",
+    "@ai-vantage/db": "workspace:*",
+    "@ai-vantage/kg": "workspace:*",
+    "@hono/node-server": "^1.14.1",
+    "@hono/zod-openapi": "^0.19.6",
+    "hono": "^4.7.6",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5",
+    "vitest": "^3.0.9"
+  }
+}

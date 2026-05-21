@@ -1,0 +1,13 @@
+{
+  "name": "@ai-vantage/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "tsx src/ingest-cli.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5"
+  }
+}

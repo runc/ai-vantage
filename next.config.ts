@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  transpilePackages: ['@ai-vantage/contracts', '@ai-vantage/kg'],
+  turbopack: {
+    root: import.meta.dirname,
+  },
 };
 
 export default nextConfig;

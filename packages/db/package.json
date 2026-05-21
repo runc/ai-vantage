@@ -1,0 +1,35 @@
+{
+  "name": "@ai-vantage/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./seed-m3": "./src/seed-m3.ts",
+    "./seed-m4": "./src/seed-m4.ts",
+    "./seed-m5": "./src/seed-m5.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/migrate.ts",
+    "db:seed": "tsx src/seed.ts",
+    "db:seed:m3-demo": "tsx src/seed-m3-cli.ts",
+    "db:seed:m4-demo": "tsx src/seed-m4-cli.ts",
+    "db:seed:m5-demo": "tsx src/seed-m5-cli.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-vantage/ai": "workspace:*",
+    "@ai-vantage/kg": "workspace:*",
+    "@libsql/client": "^0.14.0",
+    "drizzle-orm": "^0.40.0",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5",
+    "vitest": "^3.0.9"
+  }
+}

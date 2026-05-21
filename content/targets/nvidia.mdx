@@ -1,0 +1,21 @@
+---
+id: "nvidia"
+title: "NVIDIA"
+titleZh: "英伟达"
+type: "target"
+layer: "chip-design"
+subgroup: "GPU"
+moat: "CUDA生态锁定，AI训练芯片90%+份额，开发者迁移成本极高"
+risk: "客户自研替代（TPU/Trainium/Maia），推理市场份额已开始流失"
+marketPosition: "AI训练芯片绝对王者，但推理份额从95%+降至60-75%区间"
+relatedTargets: ["amd", "tsmc", "google", "microsoft", "broadcom"]
+changelog:
+  - date: "2026-05-14"
+    note: "Initial profile from AI投资地图第22篇"
+---
+
+英伟达占 AI 训练芯片 90%+，是当前 AI 基础设施最核心的芯片供应商。它的客户（谷歌、AWS、微软、Meta）正在自研 TPU、Trainium、Maia、MTIA 来替代英伟达 GPU。
+
+英伟达的护城河是 CUDA 生态，开发者写的 AI 代码绝大多数跑在 CUDA 上，迁移到 TPU/Trainium 要重写、重测、重调优。这个护城河 5-7 年没问题，但十年或许有点疑问。推理市场已经先动起来——英伟达在 AI 推理芯片的份额已经从 95%+ 降到约 60-75% 区间。
+
+但份额下降不等于赚钱下降。AI 训练和推理总市场每年还在大幅增长，即便份额从 90% 跌到 50%，绝对营收可能仍然在涨。据第三方拆解估算，一颗 B200 售价约 4 万美元，物料成本约 6 千美元，剩下 3 万多美元被英伟达拿走。它真正的风险窗口是"训练需求增速放缓 + 自研份额持续侵蚀"两件事同时发生的那一刻。
